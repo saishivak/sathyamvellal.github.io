@@ -1,4 +1,6 @@
-@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+/*@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');*/
+/*@import url('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');*/
+@import url('//fonts.googleapis.com/css?family=Sanchez:400,400italic');
 
 /*!
  * Bootstrap v2.3.2
@@ -225,7 +227,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Sanchez", "Lora", Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
   line-height: 26px;
   color: #333333;
@@ -1067,7 +1069,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family:"Sanchez", "Lora", Georgia, "Times New Roman", Times, serif;
 }
 
 label {
@@ -2911,7 +2913,7 @@ table th[class*="span"],
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
+  min-width: 80px;
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
@@ -4521,7 +4523,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Sanchez", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -6209,4 +6211,15 @@ div.subnav-fixed {
 
 .affix {
   position: fixed;
+}
+
+.menu-icon {
+  min-width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.menu-icon:before {
+  box-shadow: 
+    1px 1px 1px 1px gray,
+    1px 1px 1px 1px gray;
 }

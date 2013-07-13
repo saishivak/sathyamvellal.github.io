@@ -17,7 +17,7 @@ permalink: "blog.html"
 	<div class="tab-content">
 		<div class="tab-pane active" id="latest-posts">
 			<p>
-				<h4> Blog Posts </h4>
+				<h4> Blog Roll </h4>
 				<ul class="posts">
 					{% for post in site.posts %}
 					<li>

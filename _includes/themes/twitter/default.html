@@ -63,9 +63,12 @@
           </ul>
         </div>
         <div class="pull-right">
-          <ul class="nav">
+          <ul class="nav pull-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle menu-icon" data-toggle="dropdown">
+                <!-- Menu <b class="caret"></b> -->
+                <strong style="font-size: 30px;"><div class="menu-icon">≡</strong></div>
+              </a>
               <ul class="dropdown-menu">
                 {% assign pages_list = site.pages %}
                 {% assign group = 'menu' %}
