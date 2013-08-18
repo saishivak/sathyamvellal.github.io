@@ -4,7 +4,7 @@
  <title>A Wandering</title>
  <link href="http://sathyamvellal.in/" rel="self"/>
  <link href="http://sathyamvellal.in"/>
- <updated>2013-07-13T17:10:51+05:30</updated>
+ <updated>2013-08-18T07:31:14+05:30</updated>
  <id>http://sathyamvellal.in</id>
  <author>
    <name>Sathyam M Vellal</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>0 A.D. Game</title>
-   <link href="http://sathyamvellal.in/games/0-ad-game"/>
+   <link href="http://sathyamvellal.in/blog/games/0-ad-game"/>
    <updated>2013-07-11T00:00:00+05:30</updated>
-   <id>http://sathyamvellal.in/games/0-ad-game</id>
+   <id>http://sathyamvellal.in/blog/games/0-ad-game</id>
    <content type="html">&lt;p&gt;I grew up in a time where Age of Empires was everything! You can’t find many people who haven’t played it. Many others followed suit; Empire Earth for example. But they were not like Age of Empires. Ensemble Studios (now Microsoft Studios) did revolutionize the real-time strategy genre of computer games.&lt;br /&gt;The question is, how many who played have actually bought it?&lt;/p&gt;
 
 &lt;p&gt;In this era where we look for free (as in cost) software/games, open source software/games really are a good replacement.&lt;/p&gt;
@@ -30,9 +30,9 @@
  
  <entry>
    <title>Hello World</title>
-   <link href="http://sathyamvellal.in/general/hello-world"/>
+   <link href="http://sathyamvellal.in/blog/general/hello-world"/>
    <updated>2013-07-04T00:00:00+05:30</updated>
-   <id>http://sathyamvellal.in/general/hello-world</id>
+   <id>http://sathyamvellal.in/blog/general/hello-world</id>
    <content type="html">&lt;p&gt;In the Hindu pantheon, &lt;strong&gt;Lord Vinayaka&lt;/strong&gt; is worshipped first; believed to be the remover of obstacles. For a programmer, &amp;#8220;Hello World&amp;#8221; serves this purpose! Through this blog you&amp;#8217;ll experience the world I live in. As the tagline (in the home page) reads -&lt;/p&gt;
 
 &lt;blockquote&gt;

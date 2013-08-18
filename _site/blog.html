@@ -20,6 +20,8 @@
 
       <!-- Le styles -->
       <!--<link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">-->
+      <link href="/assets/themes/twitter/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/assets/themes/twitter/css/bootstrap-responsive.min.css" rel="stylesheet">
       <link href="/assets/themes/twitter/css/bootswatch.css" rel="stylesheet">
       <link href="/assets/themes/twitter/css/readable.css" rel="stylesheet">
       <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
@@ -197,26 +199,27 @@
 
 <div class="row-fluid">
   <div class="span12">
-    <ul class='nav nav-tabs'>
-	<li class='active'><a data-toggle='tab' href='#latest-posts'>Latest Posts </a></li>
-	<li><a data-toggle='tab' href='#tags'>Tags </a></li>
-	<li><a data-toggle='tab' href='#categories'>Categories </a></li>
-	<li><a data-toggle='tab' href='#archive'>Archive </a></li>
-</ul><div class='tabbable'>
+    <div class='tabbable'>
+	<ul class='nav nav-tabs'>
+		<li class='active'><a data-toggle='tab' href='#latest-posts'>Latest Posts </a></li>
+		<li><a data-toggle='tab' href='#categories'>Categories </a></li>
+		<li><a data-toggle='tab' href='#tags'>Tags </a></li>
+		<li><a data-toggle='tab' href='#archive'>Archive </a></li>
+	</ul>
 	<div class='tab-content'>
 		<div class='tab-pane active' id='latest-posts'>
 			<p>
-				<h4> Blog Posts </h4>
+				<h4> Blog Roll </h4>
 				<ul class='posts'>
 					
 					<li>
-						<span>11 Jul 2013</span> &raquo; <a href='/games/0-ad-game'>0 A.D. Game</a>
+						<span>11 Jul 2013</span> &raquo; <a href='/blog/games/0-ad-game'>0 A.D. Game</a>
 						<p>0ad is an Open Source, Historic Real Time Strategy game.</p>
 					</li>
 					<hr />
 					
 					<li>
-						<span>04 Jul 2013</span> &raquo; <a href='/general/hello-world'>Hello World</a>
+						<span>04 Jul 2013</span> &raquo; <a href='/blog/general/hello-world'>Hello World</a>
 						<p>def begin():</p>
 					</li>
 					<hr />
@@ -224,136 +227,7 @@
 				</ul>
 			</p>
 		</div>
-		<div class='tab-pane' id='tags'>
-			<p>
-				<div>
-					<ul class='tag_box inline'>
-						  
-						
-
-
-  
-     
-    	<li><a href='/tags.html#general-ref'>general <span>1</span></a></li>
-     
-    	<li><a href='/tags.html#hello-world-ref'>hello-world <span>1</span></a></li>
-     
-    	<li><a href='/tags.html#open-source-ref'>open-source <span>1</span></a></li>
-     
-    	<li><a href='/tags.html#games-ref'>games <span>1</span></a></li>
-     
-    	<li><a href='/tags.html#age-of-empires-ref'>age-of-empires <span>1</span></a></li>
-    
-  
-
-
-
-					</ul>
-					<hr />
-					<div class='well' style='padding: 8px 0;'>
-						<ul class='nav nav-list'>
-							
-							<li class='nav-header' id='general-ref'>general</li>
-							  
-							
-
-
-  
-  
-    
-      
-      	
-      	<li><a href='/general/hello-world'>Hello World</a></li>
-      	
-      
-    
-  
-
-
-
-							
-							<li class='nav-header' id='hello-world-ref'>hello-world</li>
-							  
-							
-
-
-  
-  
-    
-      
-      	
-      	<li><a href='/general/hello-world'>Hello World</a></li>
-      	
-      
-    
-  
-
-
-
-							
-							<li class='nav-header' id='open-source-ref'>open-source</li>
-							  
-							
-
-
-  
-  
-    
-      
-      	
-      	<li><a href='/games/0-ad-game'>0 A.D. Game</a></li>
-      	
-      
-    
-  
-
-
-
-							
-							<li class='nav-header' id='games-ref'>games</li>
-							  
-							
-
-
-  
-  
-    
-      
-      	
-      	<li><a href='/games/0-ad-game'>0 A.D. Game</a></li>
-      	
-      
-    
-  
-
-
-
-							
-							<li class='nav-header' id='age-of-empires-ref'>age-of-empires</li>
-							  
-							
-
-
-  
-  
-    
-      
-      	
-      	<li><a href='/games/0-ad-game'>0 A.D. Game</a></li>
-      	
-      
-    
-  
-
-
-
-							
-						</ul>
-					</div>
-				</div>
-			</p>
-		</div>
-		<div class='tab-pane' id='categories'>
+		<div class='tab-pane' id='categories' name='categories'>
 			<p>
 				<div>
 					<ul class='tag_box inline'>
@@ -389,7 +263,7 @@
     
       
       	
-      	<li><a href='/general/hello-world'>Hello World</a></li>
+      	<li><a href='/blog/general/hello-world'>Hello World</a></li>
       	
       
     
@@ -408,7 +282,7 @@
     
       
       	
-      	<li><a href='/games/0-ad-game'>0 A.D. Game</a></li>
+      	<li><a href='/blog/games/0-ad-game'>0 A.D. Game</a></li>
       	
       
     
@@ -422,7 +296,136 @@
 				</div>
 			</p>
 		</div>
-		<div class='tab-pane' id='archive'>
+		<div class='tab-pane' id='tags' name='tags'>
+			<p>
+				<div>
+					<ul class='tag_box inline'>
+						  
+						
+
+
+  
+     
+    	<li><a href='/blog.html#tags#general-ref'>general <span>1</span></a></li>
+     
+    	<li><a href='/blog.html#tags#hello-world-ref'>hello-world <span>1</span></a></li>
+     
+    	<li><a href='/blog.html#tags#open-source-ref'>open-source <span>1</span></a></li>
+     
+    	<li><a href='/blog.html#tags#games-ref'>games <span>1</span></a></li>
+     
+    	<li><a href='/blog.html#tags#age-of-empires-ref'>age-of-empires <span>1</span></a></li>
+    
+  
+
+
+
+					</ul>
+					<hr />
+					<div class='well' style='padding: 8px 0;'>
+						<ul class='nav nav-list'>
+							
+							<li class='nav-header' id='general-ref'>general</li>
+							  
+							
+
+
+  
+  
+    
+      
+      	
+      	<li><a href='/blog/general/hello-world'>Hello World</a></li>
+      	
+      
+    
+  
+
+
+
+							
+							<li class='nav-header' id='hello-world-ref'>hello-world</li>
+							  
+							
+
+
+  
+  
+    
+      
+      	
+      	<li><a href='/blog/general/hello-world'>Hello World</a></li>
+      	
+      
+    
+  
+
+
+
+							
+							<li class='nav-header' id='open-source-ref'>open-source</li>
+							  
+							
+
+
+  
+  
+    
+      
+      	
+      	<li><a href='/blog/games/0-ad-game'>0 A.D. Game</a></li>
+      	
+      
+    
+  
+
+
+
+							
+							<li class='nav-header' id='games-ref'>games</li>
+							  
+							
+
+
+  
+  
+    
+      
+      	
+      	<li><a href='/blog/games/0-ad-game'>0 A.D. Game</a></li>
+      	
+      
+    
+  
+
+
+
+							
+							<li class='nav-header' id='age-of-empires-ref'>age-of-empires</li>
+							  
+							
+
+
+  
+  
+    
+      
+      	
+      	<li><a href='/blog/games/0-ad-game'>0 A.D. Game</a></li>
+      	
+      
+    
+  
+
+
+
+							
+						</ul>
+					</div>
+				</div>
+			</p>
+		</div>
+		<div class='tab-pane' id='archive' name='archive'>
 			<p>
 				
 				
@@ -440,7 +443,7 @@
       <ul>
     
   
-    <li><span>July 11, 2013</span> &raquo; <a href='/games/0-ad-game'>0 A.D. Game</a></li>
+    <li><span>July 11, 2013</span> &raquo; <a href='/blog/games/0-ad-game'>0 A.D. Game</a></li>
   
     
           
@@ -455,7 +458,7 @@
   
     
   
-    <li><span>July  4, 2013</span> &raquo; <a href='/general/hello-world'>Hello World</a></li>
+    <li><span>July  4, 2013</span> &raquo; <a href='/blog/general/hello-world'>Hello World</a></li>
   
     
       </ul>
@@ -482,6 +485,15 @@
 <script type="text/javascript" src="/assets/themes/twitter/js/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="/assets/themes/twitter/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/assets/themes/twitter/js/bootswatch.js"></script>
+<script type="text/javascript">
+// Working solution to tab hyperlinks
+// $(document).ready(function() {
+//   if (location.hash !== '') $('a[href="' + location.hash + '"]').tab('show');
+//   return $('a[data-toggle="tab"]').on('shown', function(e) {
+//     return location.hash = $(e.target).attr('href').substr(1);
+//   });
+// });
+</script>
 
 
 </body>

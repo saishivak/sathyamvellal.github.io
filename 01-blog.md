@@ -7,13 +7,13 @@ permalink: "blog.html"
 ---
 {% include JB/setup %}
 
-<ul class="nav nav-tabs">
-	<li class="active"><a href="#latest-posts" data-toggle="tab">Latest Posts </a></li>
-	<li><a href="#tags" data-toggle="tab">Tags </a></li>
-	<li><a href="#categories" data-toggle="tab">Categories </a></li>
-	<li><a href="#archive" data-toggle="tab">Archive </a></li>
-</ul>
 <div class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#latest-posts" data-toggle="tab">Latest Posts </a></li>
+		<li><a href="#categories" data-toggle="tab">Categories </a></li>
+		<li><a href="#tags" data-toggle="tab">Tags </a></li>
+		<li><a href="#archive" data-toggle="tab">Archive </a></li>
+	</ul>
 	<div class="tab-content">
 		<div class="tab-pane active" id="latest-posts">
 			<p>
@@ -29,27 +29,7 @@ permalink: "blog.html"
 				</ul>
 			</p>
 		</div>
-		<div class="tab-pane" id="tags">
-			<p>
-				<div>
-					<ul class="tag_box inline">
-						{% assign tags_list = site.tags %}  
-						{% include JB/tags_list %}
-					</ul>
-					<hr/>
-					<div class="well" style="padding: 8px 0;">
-						<ul class="nav nav-list">
-							{% for tag in site.tags %}
-							<li class="nav-header" id="{{ tag[0] }}-ref">{{ tag[0] }}</li>
-							{% assign pages_list = tag[1] %}  
-							{% include JB/pages_list %}
-							{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</p>
-		</div>
-		<div class="tab-pane" id="categories">
+		<div name="categories" class="tab-pane" id="categories">
 			<p>
 				<div>
 					<ul class="tag_box inline">
@@ -69,7 +49,27 @@ permalink: "blog.html"
 				</div>
 			</p>
 		</div>
-		<div class="tab-pane" id="archive">
+		<div name="tags" class="tab-pane" id="tags">
+			<p>
+				<div>
+					<ul class="tag_box inline">
+						{% assign tags_list = site.tags %}  
+						{% include JB/tags_list %}
+					</ul>
+					<hr/>
+					<div class="well" style="padding: 8px 0;">
+						<ul class="nav nav-list">
+							{% for tag in site.tags %}
+							<li class="nav-header" id="{{ tag[0] }}-ref">{{ tag[0] }}</li>
+							{% assign pages_list = tag[1] %}  
+							{% include JB/pages_list %}
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</p>
+		</div>
+		<div name="archive" class="tab-pane" id="archive">
 			<p>
 				{% assign posts_collate = site.posts %}
 				{% include JB/posts_collate %}
