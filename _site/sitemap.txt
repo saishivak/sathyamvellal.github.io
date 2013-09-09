@@ -1,0 +1,14 @@
+
+http://sathyamvellal.in/sitemap.txt
+http://sathyamvellal.in/pages.html
+http://sathyamvellal.in/music.html
+http://sathyamvellal.in/index.html
+http://sathyamvellal.in/contact.html
+http://sathyamvellal.in/about.html
+http://sathyamvellal.in/atom.xml
+http://sathyamvellal.in/blog.html
+http://sathyamvellal.in/rss.xml
+
+http://sathyamvellal.in/blog/cool-c-programming
+http://sathyamvellal.in/blog/games/0-ad-game
+http://sathyamvellal.in/blog/general/hello-world
