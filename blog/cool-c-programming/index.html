@@ -18,17 +18,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sathyamvellal.in/blog/cool-c-programming">
+  <link rel="canonical" href="http://sathyamvellal.in/blog/cool-c-programming/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="A Wandering" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="A Wandering" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Istok+Web:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 
   
   <script type="text/javascript">
@@ -46,16 +45,16 @@
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
+<body>
+  <div id="header-container">
+    <div id="header">
+      <div class="wrapper">
+        <header role="banner"><hgroup>
   <h1><a href="/">A Wandering</a></h1>
-  
-    <h2>Music, Food and Code - The three dimensions to my world.</h2>
-  
 </hgroup>
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+        <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
@@ -70,14 +69,18 @@
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog">Blog</a></li>
+  <li><a href="/about">About</a></li>
   <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about-me">About Me</a></li>
 </ul>
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
+      </div>
+    </div>
+  </div>
+  <div id="body"   >
+    <div id="main">
+      <div id="content">
+	<div>
 <article class="hentry" role="article">
   
   <header>
@@ -388,20 +391,20 @@ Now, the preprocessor turns out to be very helpful!</p>
 </pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
 </span><span class='line'><span class="cp">#include &lt;assert.h&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="p">.</span><span class="err">#</span><span class="n">ifdef</span> <span class="n">CHECK_ENABLED</span>
+</span><span class='line'><span class="cp">#ifdef CHECK_ENABLED</span>
 </span><span class='line'><span class="cp">#define CHECK(X, Y) \</span>
 </span><span class='line'><span class="cp">do { printf(&quot;Performing Assertion\n&quot;); assert((X - Y) != 0); printf(&quot;Assertion passed\n&quot;); } while (0)</span>
 </span><span class='line'><span class="cp">#else</span>
 </span><span class='line'><span class="cp">#define CHECK(X, Y)</span>
 </span><span class='line'><span class="cp">#endif</span>
 </span><span class='line'>
-</span><span class='line'><span class="kt">void</span> <span class="n">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
 </span><span class='line'><span class="p">{</span>
 </span><span class='line'>    <span class="n">CHECK</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
 </span><span class='line'>    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">__LINE__</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">));</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="kt">int</span> <span class="n">main</span> <span class="p">()</span>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span>
 </span><span class='line'><span class="p">{</span>
 </span><span class='line'>    <span class="n">foo</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
 </span><span class='line'>    <span class="n">foo</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
@@ -1101,7 +1104,7 @@ Let me demonstrate this &ndash;</p>
   <a href="https://github.com/sathyamvellal">@sathyamvellal</a> on GitHub
   
   <script type="text/javascript">
-    $(document).ready(function(){
+    $.domReady(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -1138,15 +1141,15 @@ Let me demonstrate this &ndash;</p>
 </aside>
 
 
+      </div>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
+    <footer role="contentinfo"><p>
   Copyright &copy; 2013 - Sathyam M Vellal -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>.</span>
 </p>
 
 </footer>
-  
+    
 
 <script type="text/javascript">
       var disqus_shortname = 'sathyamvellal';
@@ -1170,7 +1173,7 @@ Let me demonstrate this &ndash;</p>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
+  js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
@@ -1191,5 +1194,6 @@ Let me demonstrate this &ndash;</p>
 
 
 
+  </div>
 </body>
 </html>

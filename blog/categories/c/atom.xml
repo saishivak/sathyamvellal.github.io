@@ -4,7 +4,7 @@
   <title><![CDATA[Category: c | A Wandering]]></title>
   <link href="http://sathyamvellal.in/blog/categories/c/atom.xml" rel="self"/>
   <link href="http://sathyamvellal.in/"/>
-  <updated>2013-09-09T22:25:12+05:30</updated>
+  <updated>2013-09-09T23:42:07+05:30</updated>
   <id>http://sathyamvellal.in/</id>
   <author>
     <name><![CDATA[Sathyam M Vellal]]></name>
@@ -237,7 +237,7 @@ Now, the preprocessor turns out to be very helpful!</p>
 
 <h1>include &lt;assert.h></h1>
 
-<p>.#ifdef CHECK_ENABLED</p>
+<h1>ifdef CHECK_ENABLED</h1>
 
 <h1>define CHECK(X, Y) \</h1>
 

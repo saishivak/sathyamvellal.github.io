@@ -4,7 +4,7 @@
   <title><![CDATA[A Wandering]]></title>
   <link href="http://sathyamvellal.in/atom.xml" rel="self"/>
   <link href="http://sathyamvellal.in/"/>
-  <updated>2013-09-09T22:25:12+05:30</updated>
+  <updated>2013-09-09T23:42:07+05:30</updated>
   <id>http://sathyamvellal.in/</id>
   <author>
     <name><![CDATA[Sathyam M Vellal]]></name>
@@ -299,20 +299,20 @@ Now, the preprocessor turns out to be very helpful!</p>
 </pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
 </span><span class='line'><span class="cp">#include &lt;assert.h&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="p">.</span><span class="err">#</span><span class="n">ifdef</span> <span class="n">CHECK_ENABLED</span>
+</span><span class='line'><span class="cp">#ifdef CHECK_ENABLED</span>
 </span><span class='line'><span class="cp">#define CHECK(X, Y) \</span>
 </span><span class='line'><span class="cp">do { printf(&quot;Performing Assertion\n&quot;); assert((X - Y) != 0); printf(&quot;Assertion passed\n&quot;); } while (0)</span>
 </span><span class='line'><span class="cp">#else</span>
 </span><span class='line'><span class="cp">#define CHECK(X, Y)</span>
 </span><span class='line'><span class="cp">#endif</span>
 </span><span class='line'>
-</span><span class='line'><span class="kt">void</span> <span class="n">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
 </span><span class='line'><span class="p">{</span>
 </span><span class='line'>    <span class="n">CHECK</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
 </span><span class='line'>    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;%d: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">__LINE__</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">));</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="kt">int</span> <span class="n">main</span> <span class="p">()</span>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span>
 </span><span class='line'><span class="p">{</span>
 </span><span class='line'>    <span class="n">foo</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
 </span><span class='line'>    <span class="n">foo</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
