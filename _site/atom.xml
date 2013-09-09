@@ -4,13 +4,23 @@
  <title>A Wandering</title>
  <link href="http://sathyamvellal.in/" rel="self"/>
  <link href="http://sathyamvellal.in"/>
- <updated>2013-08-18T07:31:14+05:30</updated>
+ <updated>2013-09-09T08:42:00+05:30</updated>
  <id>http://sathyamvellal.in</id>
  <author>
    <name>Sathyam M Vellal</name>
    <email>me@sathyamvellal.in</email>
  </author>
 
+ 
+ <entry>
+   <title>Cool C Programming</title>
+   <link href="http://sathyamvellal.in/blog/cool-c-programming"/>
+   <updated>2013-09-09T00:00:00+05:30</updated>
+   <id>http://sathyamvellal.in/blog/cool-c-programming</id>
+   <content type="html">&lt;script type=&#39;text/javascript&#39;&gt;
+window.location.href=&quot;https://github.com/pesos/resources/tree/master/Tech%20Talk%20Tuesday/Day1-03-09-13&quot;;
+&lt;/script&gt;&lt;link href=&#39;https://github.com/pesos/resources/tree/master/Tech%20Talk%20Tuesday/Day1-03-09-13&#39; rel=&#39;canonical&#39; /&gt;</content>
+ </entry>
  
  <entry>
    <title>0 A.D. Game</title>

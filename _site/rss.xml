@@ -5,10 +5,20 @@
         <description>A Wandering - Sathyam M Vellal</description>
         <link>http://sathyamvellal.in</link>
         <link>http://sathyamvellal.in</link>
-        <lastBuildDate>2013-08-18T07:31:14+05:30</lastBuildDate>
-        <pubDate>2013-08-18T07:31:14+05:30</pubDate>
+        <lastBuildDate>2013-09-09T08:42:00+05:30</lastBuildDate>
+        <pubDate>2013-09-09T08:42:00+05:30</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Cool C Programming</title>
+                <description>&lt;script type=&#39;text/javascript&#39;&gt;
+window.location.href=&quot;https://github.com/pesos/resources/tree/master/Tech%20Talk%20Tuesday/Day1-03-09-13&quot;;
+&lt;/script&gt;&lt;link href=&#39;https://github.com/pesos/resources/tree/master/Tech%20Talk%20Tuesday/Day1-03-09-13&#39; rel=&#39;canonical&#39; /&gt;</description>
+                <link>http://sathyamvellal.in/blog/cool-c-programming</link>
+                <guid>http://sathyamvellal.in/blog/cool-c-programming</guid>
+                <pubDate>2013-09-09T00:00:00+05:30</pubDate>
+        </item>
 
         <item>
                 <title>0 A.D. Game</title>

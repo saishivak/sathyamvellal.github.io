@@ -62,6 +62,7 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
+    post.puts "name: \"#{title.gsub(/-/,' ')}\""
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
     post.puts "category: "
@@ -89,8 +90,11 @@ task :page do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: page"
+    post.puts "name: \"#{title}\""
+	post.puts 'group: menu'
     post.puts "title: \"#{title}\""
-    post.puts 'description: ""'
+    post.puts 'tagline: ""'
+	post.puts 'permalink: ""'
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end

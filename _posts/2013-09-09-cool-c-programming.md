@@ -3,8 +3,8 @@ layout: post
 name: "Cool C Programming"
 title: "Cool C Programming"
 description: "You never know it till you see it"
-category: 
-tags: []
+category: tech
+tags: [c, programming, tricks]
 ---
 {% include JB/setup %}
 
