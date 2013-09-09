@@ -1,15 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://sathyamvellal.in/blog/hello-world/</loc>
+        <lastmod>2013-09-09T22:00:43+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/blog/0ad-game/</loc>
+        <lastmod>2013-09-09T22:03:36+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/blog/cool-c-programming/</loc>
+        <lastmod>2013-09-09T22:06:17+05:30</lastmod>
+    </url>
+    <url>
         <loc>http://sathyamvellal.in/robots.txt</loc>
         <lastmod>2013-09-09T18:54:28+05:30</lastmod>
     </url>
     <url>
         <loc>http://sathyamvellal.in/blog/archives/</loc>
-        <lastmod>2013-09-09T18:54:28+05:30</lastmod>
+        <lastmod>2013-09-09T22:06:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/blog/</loc>
+        <lastmod>2013-09-09T22:06:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/g+/</loc>
+        <lastmod>2013-09-09T20:14:43+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/fb/</loc>
+        <lastmod>2013-09-09T20:14:23+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/about-me/</loc>
+        <lastmod>2013-09-09T22:07:00+05:30</lastmod>
     </url>
     <url>
         <loc>http://sathyamvellal.in/</loc>
-        <lastmod>2013-09-09T18:54:28+05:30</lastmod>
+        <lastmod>2013-09-09T22:15:30+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://sathyamvellal.in/github/</loc>
+        <lastmod>2013-09-09T20:14:26+05:30</lastmod>
     </url>
 </urlset>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: general | A Wandering]]></title>
+  <link href="http://sathyamvellal.in/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://sathyamvellal.in/"/>
+  <updated>2013-09-09T22:17:42+05:30</updated>
+  <id>http://sathyamvellal.in/</id>
+  <author>
+    <name><![CDATA[Sathyam M Vellal]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://sathyamvellal.in/blog/hello-world/"/>
+    <updated>2013-07-04T19:40:00+05:30</updated>
+    <id>http://sathyamvellal.in/blog/hello-world</id>
+    <content type="html"><![CDATA[<p>In the Hindu pantheon, <strong>Lord Vinayaka</strong> is worshipped first; believed to be the remover of obstacles. For a programmer, &ldquo;Hello World&rdquo; serves this purpose!</p>
+
+<!-- more -->
+
+
+<p>Through this blog you&rsquo;ll experience the world I live in. As the tagline (in the home page) reads &ndash;</p>
+
+<blockquote><p>Music, Food and Code -<br/>
+The three dimensions to my world.</p></blockquote>
+
+<p>So, lets get started!</p>
+]]></content>
+  </entry>
+  
+</feed>
